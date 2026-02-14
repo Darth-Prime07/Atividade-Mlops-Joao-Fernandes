@@ -1,0 +1,34 @@
+artifact_path: mlflow-artifacts:/1/models/m-5a52e944e9dc402fa50f967ebe3ed014/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.11.9
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.7.1
+    skops_trusted_types: null
+is_signature_from_type_hint: false
+mlflow_version: 3.9.0
+model_id: m-5a52e944e9dc402fa50f967ebe3ed014
+model_size_bytes: 7484
+model_uuid: m-5a52e944e9dc402fa50f967ebe3ed014
+prompts: null
+run_id: f65c2182402c4e8f9a81f7e7e01e4ba7
+signature:
+  inputs: '[{"type": "double", "name": "carat", "required": true}, {"type": "string",
+    "name": "cut", "required": true}, {"type": "string", "name": "color", "required":
+    true}, {"type": "string", "name": "clarity", "required": true}, {"type": "double",
+    "name": "depth", "required": true}, {"type": "double", "name": "table", "required":
+    true}, {"type": "double", "name": "x", "required": true}, {"type": "double", "name":
+    "y", "required": true}, {"type": "double", "name": "z", "required": true}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "float64", "shape": [-1]}}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2026-02-14 20:25:02.837320'
