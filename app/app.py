@@ -2,11 +2,18 @@ import streamlit as st
 import joblib
 import pandas as pd
 
-# --- CONFIGURAÇÃO ---
-st.set_page_config(page_title="Previsão de Diamantes", page_icon="💎")
+# 1. Mude o título da aba do navegador aqui
+st.set_page_config(
+    page_title="MLOps - João Fernandes",
+    page_icon="💎"
+)
 
+# 2. Mude o título principal na página
 st.title("💎 Previsão de Preço de Diamantes")
-st.markdown("**Modelo:** Decision Tree Regressor (Pipeline com Pré-processamento)")
+
+# 3. Adicione sua assinatura logo abaixo do título
+st.markdown("### Desenvolvido por: João Fernandes") 
+st.markdown("---")
 
 # Carregar modelo (Pipeline completo)
 try:
